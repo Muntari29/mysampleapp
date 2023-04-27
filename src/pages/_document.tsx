@@ -6,12 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta name="description" content="Muntari Blog" />
-        {process.env.NODE_ENV === "production" && (
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-        )}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* keywords는 예전만큼 중요하지 않음, 페이지 내에서 특정 키워드를 적절하게 사용하는것이 SEO에 유리함 */}
         <meta name="keywords" content="Muntari" />
         <link rel="icon" href="/favicon.ico" />
