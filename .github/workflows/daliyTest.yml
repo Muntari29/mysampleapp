@@ -1,30 +1,31 @@
-name: Build and Deploy
+# NOTE 이후 필요하다 판단되면 주석 제거 후 로직 개선하여 사용할 것.
+# name: Daily Build Test
 
-on:
-  schedule:
-    - cron: '0 12 * * *' # 매일 12시에 실행
+# on:
+#   schedule:
+#     - cron: '0 12 * * *' # 매일 12시에 실행
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+# jobs:
+#   build-and-deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: '16.x'
 
-      - name: Install dependencies
-        run: pnpm install
+#       - name: Install dependencies
+#         run: pnpm install
 
-      - name: Build app
-        run: pnpm build
+#       - name: Build app
+#         run: pnpm build
 
-      # 로그 파일을 artifacts로 저장
-      - name: Save log files
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-logs
-          path: logs/
+#       # 로그 파일을 artifacts로 저장
+#       - name: Save log files
+#         uses: actions/upload-artifact@v2
+#         with:
+#           name: build-logs
+#           path: logs/
