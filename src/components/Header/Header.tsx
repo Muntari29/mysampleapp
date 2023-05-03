@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex h-full box-border justify-between items-center bg-white dark:bg-dark-primary">
+    <div className="flex h-full box-border justify-between items-center bg-white dark:bg-dark-primary p-4">
       <div className="flex-auto text-dark-primary dark:text-white">
         <Link href="/">MunTestApp</Link>
       </div>
@@ -26,7 +26,7 @@ const Header = () => {
           className="flex items-center w-6 h-6 rounded-full hover:bg-gray-700 dark:hover:bg-gray-600"
           onClick={handleChangeTheme}
         >
-          <div className="w-6 h-6 flex justify-center items-center">
+          <div className="w-8 h-8 flex justify-center items-center">
             <MdDarkMode />
           </div>
         </button>
