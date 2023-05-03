@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex h-full box-border justify-between items-center bg-white dark:bg-dark-primary p-4">
+    <header className="flex h-full box-border justify-between items-center bg-white dark:bg-dark-primary p-4">
       <div className="flex-auto text-dark-primary dark:text-white">
         <Link href="/">MunTestApp</Link>
       </div>
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 
