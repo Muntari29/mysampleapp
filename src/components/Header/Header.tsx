@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <div className="flex gap-4">
         <button
-          className="flex items-center w-6 h-6 rounded-full hover:bg-gray-700 dark:hover:bg-gray-600"
+          className="flex items-center w-6 h-6 rounded-full bg-dark-primary dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-black"
           onClick={handleChangeTheme}
         >
           <div className="w-8 h-8 flex justify-center items-center">
