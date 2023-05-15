@@ -1,38 +1,40 @@
-import { setLocalStorageItem } from "@/utils/localStorage";
-import Link from "next/link";
-import { memo } from "react";
-import { MdDarkMode } from "react-icons/md";
+import { setLocalStorageItem } from '@/utils/localStorage';
+import Link from 'next/link';
+import { memo } from 'react';
+import { MdDarkMode } from 'react-icons/md';
+import HText from '../HText/HText';
+import content from '@/config/content';
 
 const Header = () => {
-  const handleChangeTheme = () => {
-    const hasClassNameDark =
-      document.documentElement.classList.value === "dark";
-    if (hasClassNameDark) {
-      document.documentElement.classList.remove("dark");
-      setLocalStorageItem("theme", "light");
-      return;
-    }
-    document.documentElement.classList.add("dark");
-    setLocalStorageItem("theme", "dark");
-  };
+	const handleChangeTheme = () => {
+		const hasClassNameDark =
+			document.documentElement.classList.value === 'dark';
+		if (hasClassNameDark) {
+			document.documentElement.classList.remove('dark');
+			setLocalStorageItem('theme', 'light');
+			return;
+		}
+		document.documentElement.classList.add('dark');
+		setLocalStorageItem('theme', 'dark');
+	};
 
-  return (
-    <header className="flex h-full box-border justify-between items-center bg-white dark:bg-dark-primary p-4">
-      <div className="flex-auto text-dark-primary dark:text-white">
-        <Link href="/">MunTestApp</Link>
-      </div>
-      <div className="flex gap-4">
-        <button
-          className="flex items-center w-6 h-6 rounded-full bg-dark-primary dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-black"
-          onClick={handleChangeTheme}
-        >
-          <div className="w-8 h-8 flex justify-center items-center">
-            <MdDarkMode />
-          </div>
-        </button>
-      </div>
-    </header>
-  );
+	return (
+		<header className="flex h-full box-border justify-between items-center bg-white dark:bg-dark-primary p-4">
+			<div className="flex-auto text-dark-primary dark:text-white">
+				<Link href="/">MunTestApp</Link>
+			</div>
+			<div className="flex gap-4">
+				<button
+					className="flex items-center w-6 h-6 rounded-full bg-dark-primary dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-black"
+					onClick={handleChangeTheme}>
+					<div className="w-8 h-8 flex justify-center items-center">
+						<MdDarkMode />
+					</div>
+				</button>
+			</div>
+			<HText className="text-cyan-700">{content.title}</HText>
+		</header>
+	);
 };
 
 export default memo(Header);
