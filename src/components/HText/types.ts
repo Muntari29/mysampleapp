@@ -4,7 +4,7 @@ export type TypeHText = "h1" | "h2" | "h3";
 
 export interface HTextProps {
   /**
-   * defatul h1 Tag
+   * defatul h3 Tag
    */
   type: TypeHText;
   children: ReactNode;
