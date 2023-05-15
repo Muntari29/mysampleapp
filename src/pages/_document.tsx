@@ -15,7 +15,7 @@ export default function Document() {
         <meta name="keywords" content="Muntari" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>
+      <body className="before:fixed before:w-full before:h-2 before:top-0 before:left-0 before:bg-dark-primary dark:before:bg-white">
         <Main />
         <NextScript />
       </body>
