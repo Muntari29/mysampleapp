@@ -26,8 +26,23 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-h1,
-h2,
-h3 {
-	word-break: keep-all;
+@layer base {
+	/* 일반 모드 텍스트 색상 */
+	h1,
+	h2,
+	h3,
+	p,
+	span {
+		word-break: keep-all;
+		color: #222222;
+		white-space: pre-line;
+	}
+
+	.dark h1,
+	.dark h2,
+	.dark h3,
+	.dark p,
+	.dark span {
+		color: #fff;
+	}
 }

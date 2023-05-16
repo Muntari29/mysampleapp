@@ -21,7 +21,7 @@ export default function Home() {
 		//     <p>CDN 정적 웹 배포하볼까나~</p>
 		//   </div>
 		// </div>
-		<main className="grid grid-cols-1 md:grid-cols-[120px_minmax(0,_1fr)]">
+		<main className="grid grid-cols-1 md:grid-cols-[120px_minmax(0,_1fr)] ">
 			<div>
 				<Image
 					src={'/ryan.gif'}
@@ -32,10 +32,10 @@ export default function Home() {
 				/>
 			</div>
 			<div>
-				<HText className="h-[120] flex justify-center items-center">
+				<HText className="h-[120px] flex justify-center items-center">
 					{content.title}
 				</HText>
-				<HText type="h2">{content.subTitle}</HText>
+				<p className="pt-1 text-lg">{content.subTitle}</p>
 			</div>
 		</main>
 	);
