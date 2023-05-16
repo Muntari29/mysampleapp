@@ -24,7 +24,7 @@ export default function Document() {
 					href="/favicon.ico"
 				/>
 			</Head>
-			<body className="before:fixed before:w-full before:h-2 before:top-0 before:left-0 before:bg-dark-primary dark:before:bg-white">
+			<body className="bg-white dark:bg-dark-primary before:fixed before:w-full before:h-2 before:top-0 before:left-0 before:bg-dark-primary dark:before:bg-white">
 				<Main />
 				<NextScript />
 			</body>
