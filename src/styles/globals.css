@@ -34,7 +34,8 @@ body {
 	h4,
 	h5,
 	p,
-	span {
+	span,
+	li {
 		word-break: keep-all;
 		color: #222222;
 		white-space: pre-line;
@@ -46,7 +47,8 @@ body {
 	.dark h4,
 	.dark h5,
 	.dark p,
-	.dark span {
+	.dark span,
+	.dark li {
 		color: #fff;
 	}
 }
