@@ -31,6 +31,8 @@ body {
 	h1,
 	h2,
 	h3,
+	h4,
+	h5,
 	p,
 	span {
 		word-break: keep-all;
@@ -41,6 +43,8 @@ body {
 	.dark h1,
 	.dark h2,
 	.dark h3,
+	.dark h4,
+	.dark h5,
 	.dark p,
 	.dark span {
 		color: #fff;
