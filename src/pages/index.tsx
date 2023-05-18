@@ -42,6 +42,18 @@ export default function Home() {
 			</main>
 			<Section>
 				<HText type="h2">Work Experience</HText>
+				<div className="mt-8 grid grid-cols-1 md:grid-cols-2">
+					<div className="flex flex-col gap-1 mb-4 md:mb-0">
+						<HText type="h3">콜라비팀</HText>
+						<span>Frontend Developer</span>
+						<span>2022.06 - 2023.05</span>
+					</div>
+					<div className="flex flex-col gap-1">
+						<HText type="h3">블록체인 메신저 프론트엔드 개발</HText>
+						<span>Frontend Developer</span>
+						<span>2022.06 - 2023.05</span>
+					</div>
+				</div>
 			</Section>
 		</>
 	);
