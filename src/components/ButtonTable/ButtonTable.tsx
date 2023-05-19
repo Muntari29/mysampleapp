@@ -1,4 +1,4 @@
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { FaBlogger, FaGithubSquare } from "react-icons/fa";
 import Link from "next/link";
@@ -7,9 +7,9 @@ import contact from "@/config/contact";
 const ButtonTable = () => {
   return (
     <div className="flex grid-cols-2 place-items-center gap-2 w-full md:w-32 mt-8 md:grid">
-      <button className="hover:bg-[#9da6ae] p-2 rounded-lg w-fit" type="button">
+      <button className="hover:bg-[#cfd7df] p-2 rounded-lg w-fit" type="button">
         <Link href={contact.github} target="_blank">
-          <FaGithubSquare size={32} color="#1B1F23" />
+          <FaGithubSquare size={32} color="#677684" />
         </Link>
       </button>
       <button className="hover:bg-[#fa8f94] p-2 rounded-lg w-fit">
