@@ -40,11 +40,10 @@ export default function Home() {
           <p className="pt-6 md:pt-4 text-lg">{content.subTitle}</p>
         </div>
       </main>
-      <Section>
+      <Section className="border-b-[1px]">
         <HText type="h2">Work Experience</HText>
         <Contents />
       </Section>
-      <hr className="mt-8" />
       <Section>
         <HText type="h2">Education</HText>
         <Row />
