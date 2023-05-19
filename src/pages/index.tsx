@@ -4,6 +4,7 @@ import HText from "@/components/HText/HText";
 import content from "@/config/content";
 import Section from "@/components/Section/Section";
 import Contents from "@/components/Contents/Contents";
+import Row from "@/components/Row/Row";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,13 @@ export default function Home() {
       <Section>
         <HText type="h2">Work Experience</HText>
         <Contents />
+      </Section>
+      <hr className="mt-8" />
+      <Section>
+        <HText type="h2">Education</HText>
+        <Row />
+        <Row />
+        <Row />
       </Section>
     </>
   );

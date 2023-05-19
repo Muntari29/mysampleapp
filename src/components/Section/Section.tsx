@@ -1,7 +1,7 @@
-import { SectionProps } from './types';
+import { SectionProps } from "./types";
 
-const Section = ({ children }: SectionProps) => {
-	return <section className="mt-10">{children}</section>;
+const Section = ({ children, className = "" }: SectionProps) => {
+  return <section className={`mt-10 ${className}`}>{children}</section>;
 };
 
 export default Section;
