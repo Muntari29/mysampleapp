@@ -19,11 +19,11 @@ const Header = () => {
     <header className="flex h-full box-border justify-end items-center bg-white dark:bg-dark-primary p-4">
       <div className="flex gap-4">
         <button
-          className="flex items-center w-6 h-6 rounded-full bg-dark-primary dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-black"
+          className="flex items-center w-10 h-10 rounded-full bg-dark-primary dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-black"
           onClick={handleChangeTheme}
         >
-          <div className="w-8 h-8 flex justify-center items-center">
-            <MdDarkMode />
+          <div className="w-10 h-10 flex justify-center items-center">
+            <MdDarkMode size={24} />
           </div>
         </button>
       </div>

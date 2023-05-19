@@ -5,6 +5,7 @@ import content from "@/config/content";
 import Section from "@/components/Section/Section";
 import Contents from "@/components/Contents/Contents";
 import Row from "@/components/Row/Row";
+import ButtonTable from "@/components/ButtonTable/ButtonTable";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,6 +50,10 @@ export default function Home() {
         <Row />
         <Row />
         <Row />
+      </Section>
+      <Section>
+        <HText type="h2">Contact</HText>
+        <ButtonTable />
       </Section>
     </>
   );
