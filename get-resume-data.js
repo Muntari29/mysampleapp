@@ -9,15 +9,20 @@ const formatToObject = (str) => {
     const [key, value] = dataList[i].split(",");
     res[key] = value;
   }
-  console.log(res);
   return res;
 };
 
-const URL =
-  // "https://docs.google.com/spreadsheets/d/1OYMSlIgjbmzf0OBME_IhhQgeCH7wP52E3QNKc7b2xV0/export?format=csv";
+const saveFile = (str) => {
+  const res = formatToObject(str);
+  fs.writeFileSync(
+    "./src/config/resume-data.json",
+    JSON.stringify(res, null, 2)
+  );
+};
 
+const URL =
   "https://docs.google.com/spreadsheets/d/1iDBSJ0eyTs3i4NWOc0sC6uyd0niEkwJynoWWLSMCa1E/export?format=csv";
 
 fetch(URL)
   .then((res) => res.data)
-  .then(formatToObject);
+  .then(saveFile);
