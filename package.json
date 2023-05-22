@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "pnpm update-resume && next dev",
+    "build": "pnpm update-resume && next build && next export",
+    "start": "pnpm update-resume && next start",
+    "lint": "next lint",
+    "update-resume": "node ./get-resume-data.js"
   },
   "dependencies": {
     "@types/node": "18.16.1",
