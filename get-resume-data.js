@@ -19,8 +19,8 @@ const formatToObject = (str) => {
 const saveFile = (str) => {
   const res = formatToObject(str);
   fs.writeFileSync(
-    "./src/config/resume-data.json",
-    JSON.stringify(res, null, 2)
+    "./src/config/resume-data.js",
+    `const config = ${JSON.stringify(res, null, 2)};\n`
   );
 };
 
