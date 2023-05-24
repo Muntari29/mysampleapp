@@ -39,9 +39,21 @@ export default function Home() {
       </Section>
       <Section>
         <HText type="h2">Education</HText>
-        <Row />
-        <Row />
-        <Row />
+        <Row
+          title={contents.education_title_1}
+          period={contents.education_period_1}
+          description={contents.education_desc_1}
+        />
+        <Row
+          title={contents.education_title_2}
+          period={contents.education_period_2}
+          description={contents.education_desc_2}
+        />
+        <Row
+          title={contents.education_title_3}
+          period={contents.education_period_3}
+          description={contents.education_desc_3}
+        />
       </Section>
       <Section>
         <HText type="h2">Contact</HText>
