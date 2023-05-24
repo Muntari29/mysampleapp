@@ -14,7 +14,7 @@ const formatToObject = (str) => {
   for (let i = 1; i < dataList.length; i++) {
     const [key, value] = dataList[i].split(",,");
 
-    res[key] = value;
+    res[key] = value.replace(/\\n/g, "\n");
   }
   return res;
 };
@@ -23,7 +23,7 @@ const saveFile = (str) => {
   const res = formatToObject(str);
   fs.writeFileSync(
     "./src/config/resume-data.js",
-    `const config = ${JSON.stringify(res, null, 2)};\n`
+    `export const contents = ${JSON.stringify(res, null, 2)};\n`
   );
 };
 
