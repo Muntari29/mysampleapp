@@ -8,6 +8,7 @@ import ButtonTable from "@/components/ButtonTable/ButtonTable";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import IconButton from "@/components/IconButton/IconButton";
 import { contents } from "@/config/resume-data";
+import ContentItem from "@/components/ContentItem/ContentItem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,25 @@ export default function Home() {
       </main>
       <Section className="border-b-[1px]">
         <HText type="h2">Work Experience</HText>
-        <Contents />
+        <Contents
+          title={contents.we_main_title_1}
+          period={contents.we_main_period_1}
+        >
+          <ContentItem
+            title={contents.we_title_1}
+            period={contents.we_period_1}
+            desc={contents.we_desc_1}
+            roles="test"
+            stack={contents.we_stacks_1}
+          />
+          <ContentItem
+            title={contents.we_title_2}
+            period={contents.we_period_2}
+            desc={contents.we_desc_2}
+            roles="test"
+            stack={contents.we_stacks_2}
+          />
+        </Contents>
       </Section>
       <Section>
         <HText type="h2">Education</HText>
