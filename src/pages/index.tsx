@@ -44,14 +44,14 @@ export default function Home() {
             title={contents.we_title_1}
             period={contents.we_period_1}
             desc={contents.we_desc_1}
-            roles="test"
+            roles={contents.we_role_1}
             stack={contents.we_stacks_1}
           />
           <ContentItem
             title={contents.we_title_2}
             period={contents.we_period_2}
             desc={contents.we_desc_2}
-            roles="test"
+            roles={contents.we_role_2}
             stack={contents.we_stacks_2}
           />
         </Contents>

@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import HText from "../HText/HText";
 import { ContentItemProps } from "./types";
 
@@ -8,6 +9,15 @@ const ContentItem = ({
   roles,
   stack,
 }: ContentItemProps) => {
+  const roleArray = useMemo(
+    () =>
+      roles
+        .slice(1, -1)
+        .split("/")
+        .map((str) => str.trim()),
+    [roles]
+  );
+
   return (
     <>
       <HText type="h4" className="mt-10">
@@ -18,10 +28,9 @@ const ContentItem = ({
       <p>{desc}</p>
       <HText type="h5">Role</HText>
       <ul className="list-inside list-disc">
-        <li>역할1</li>
-        <li>역할2</li>
-        <li>역할3</li>
-        <li>역할4</li>
+        {roleArray.map((el) => (
+          <li key={el}>{el}</li>
+        ))}
       </ul>
       <HText type="h5">Tech Stack</HText>
       <p>{stack}</p>

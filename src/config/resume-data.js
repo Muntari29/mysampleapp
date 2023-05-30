@@ -14,12 +14,12 @@ export const contents = {
   "we_main_period_1": "2022.06 - 2023.05",
   "we_title_1": "커뮤니티형 메신저 어플리케이션 개발",
   "we_period_1": "2023.01 - 2023.04",
-  "we_desc_1": "메신저 어플리케이션 프론트엔드 개발 (IOS, AOS)",
+  "we_desc_1": "모바일 어플리케이션의 프론트엔드를 개발했습니다. \n비즈니스 요구에 맞는 다양한 메신저 관련 기능들을 개발하였으며 프로젝트 초기부터 서비스 출시까지 완수하였습니다. ",
   "we_stacks_1": "React, Typescript, React-Native, React-Query, Recoil, Websocket, Styeld-Components, Storybook, I18Next",
-  "we_role_1": "[absd, ASDD, PQWE]",
+  "we_role_1": "[페이지 및 컴포넌트 UI 개발/사용자, 채널 검색 기능 개발/입력창 금칙어, 중복, 생년월일 검증 유틸 함수 개발/i18Next를 이용한 12개국 다국어 지원/소켓 이벤트 수신 및 데이터 갱신 처리]",
   "we_title_2": "커뮤니티형 메신저 어플리케이션 개발",
   "we_period_2": "2022.06 - 2022.12",
-  "we_desc_2": "메신저 어플리케이션 프론트엔드 개발 (Desktop)",
+  "we_desc_2": "데스크탑 어플리케이션의 프론트엔드를 개발했습니다. \n컴포넌트 및 라우팅 설계, 메신저 어드민 개발 등  비즈니스 요구에 맞는 다양한 메신저 관련 기능들을 개발하였습니다.",
   "we_stacks_2": "React, Typescript, Electron, React-Query, Recoil, Websocket, Styeld-Components, MUI, Storybook, I18Next",
-  "we_role_2": "[absd, ASDD, PQWE]"
+  "we_role_2": "[페이지 및 컴포넌트 UI 개발/대화방, 알람, 사용자 메신저 관련 기능 개발/서비스 랜딩 페이지 개발/메신저 어드민 개발/소켓 이벤트 수신 및 데이터 갱신 처리]"
 };
